@@ -11,6 +11,6 @@ public class LoginTestHome extends TestBaseHome{
        type(By.name("email"), "stepanenko6288@yandex.com");
        type(By.name("password"), "6969Sasha#%");
        click(By.name("Registration"));
-       Assert.assertTrue(isAlertDisplayed());
+       Assert.assertTrue(isElementPresent(By.xpath("//button[.='Sign Out']")));
    }
 }
